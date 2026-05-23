@@ -2,13 +2,6 @@
 
 > Automatically rename your movies, TV shows, and anime — perfectly formatted for Jellyfin — powered by TMDB.
 
-!\[Version](https://img.shields.io/badge/version-1.7.4-e8445a?style=flat-square)
-!\[Platform](https://img.shields.io/badge/platform-Windows-0078d4?style=flat-square)
-!\[License](https://img.shields.io/badge/license-All%20Rights%20Reserved-222?style=flat-square)
-!\[TMDB](https://img.shields.io/badge/powered%20by-TMDB-01b4e4?style=flat-square)
-
-\---
-
 ## What it does
 
 Media Renamer scans a folder of video files, looks them up on [The Movie Database (TMDB)](https://www.themoviedb.org/), and renames them into the exact format Jellyfin expects — including genre routing, TV season folders, and episode titles.
