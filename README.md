@@ -42,7 +42,20 @@ Pre-built `.exe` files are optional conveniences built from this source with PyI
 - **Undo**, manual TMDB picker, ID cache, export unmatched CSV
 - Optional **Jellyfin** library scan after apply
 - **Windows-safe filenames** — e.g. `Avengers: Endgame` → `Avengers - Endgame`
+## Filename fix (v1.7.4)
 
+TMDB titles often include colons (e.g. `Avengers: Endgame`). Colons are **not allowed** in file names on Windows or macOS.
+
+The `sanitize()` function in `media_renamer.py` replaces `:` with ` -` and strips other illegal characters (`<>"/\|?*`):
+
+| TMDB title | Output filename |
+|------------|-----------------|
+| `Avengers: Endgame` | `Avengers - Endgame (2019).mkv` |
+| `Dragon Ball Super: Broly` | `Dragon Ball Super - Broly (2018).mkv` |
+
+Also change the Features bullet from "Windows-safe" to:
+
+- **Windows/macOS-safe filenames** — invalid path characters sanitized (see Filename fix below)
 ## Requirements
 
 - **Windows 10/11** for the packaged `.exe`, or **Python 3.10+** from source
