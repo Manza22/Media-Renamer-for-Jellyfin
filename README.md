@@ -6,7 +6,7 @@
 
 ![Main window](docs/screenshot-main.png)
 
-## Open source â€” what you may do
+## Open source -” what you may do
 
 This project is released under the **[MIT License](LICENSE)**. That means you are free to:
 
@@ -38,7 +38,7 @@ Pre-built `.exe` files are optional conveniences built from this source with PyI
 - **Movies** â€” `Title (Year).mp4`; optional copy into genre subfolders
 - **TV shows** â€” `Show - S##E## - Episode Title.mp4` under `Show Name/Season XX/`
 - **Flat-season remap** â€” when a download site labels everything `S01`, map episodes to the correct TMDB seasons
-- **Episode Browser** â€” batch-rename a full folder
+- **Episode Browser** -” batch-rename a full folder
 - **Undo**, manual TMDB picker, ID cache, export unmatched CSV
 - Optional **Jellyfin** library scan after apply
 - **Windows/macOS-safe filenames** â€” e.g. `Avengers: Endgame` â†’ `Avengers - Endgame` (see [Filename fix](#filename-fix-v174) below)
